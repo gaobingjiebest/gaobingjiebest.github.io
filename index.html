@@ -16,12 +16,6 @@
       background-size: cover;
     }
 
-    h1 {
-      color: purple;
-      padding-right: 180px;
-      font-style: italic;
-    }
-
     .wrap {
       width: 530px;
       margin: 50px auto;
@@ -73,6 +67,10 @@
       transform: scale(1);
       z-index: 1;
     }
+
+    .wrap input[name='photos']:hover+label {
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -105,10 +103,7 @@
     <label for="p5">
       <img src="images/image5.jpg" width="90">
     </label>
-    <img src="images/image5.jpg"><br>
-    <h1>
-      头号玩家
-    </h1>
+    <img src="images/image5.jpg">
   </div>
 </body>
 </html>
