@@ -1,12 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>今天我要开飞机</title>
-  <link rel="stylesheet" type="text/css" href="./index.css">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Good Good study,Day Day up</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url(images/image6.jpg);
+      background-size: cover;
+    }
+
+    h1 {
+      color: purple;
+      padding-right: 180px;
+      font-style: italic;
+    }
+
+    .wrap {
+      width: 530px;
+      margin: 50px auto;
+      padding-top: 320px;
+      position: relative;
+    }
+
+    .wrap>img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: 0px 10px 10px -5px;
+      transition: all 0.5s;
+    }
+
+    .wrap label {
+      float: left;
+      margin: 0px 10px 0px 0px;
+      box-shadow: 0px 10px 10px -5px;
+      border: 1px solid gray;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    .wrap label img {
+      display: block;
+    }
+
+    .wrap input[name='photos'] {
+      display: none;
+    }
+
+    .wrap input[name='photos']:checked+label {
+      opacity: 1;
+    }
+
+    .wrap input[name='photos']~ img {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+
+    .wrap input[name='photos']:checked+label+img {
+      opacity: 1;
+      transform: scale(1);
+    }
+    
+    .wrap input[name='photos']:hover {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="style1">It works</h1>
-  
+  <div class="wrap">
+    <input type="radio" name="photos" id="p1" checked="checked">
+    <label for="p1">
+      <img src="images/image1.jpg" width="90">
+    </label>
+    <img src="images/image1.jpg">
+
+    <input type="radio" name="photos" id="p2">
+    <label for="p2">
+      <img src="images/image2.jpg" width="90">
+    </label>
+    <img src="images/image2.jpg">
+
+    <input type="radio" name="photos" id="p3">
+    <label for="p3">
+      <img src="images/image3.jpg" width="90">
+    </label>
+    <img src="images/image3.jpg">
+
+    <input type="radio" name="photos" id="p4">
+    <label for="p4">
+      <img src="images/image4.jpg" width="90">
+    </label>
+    <img src="images/image4.jpg">
+
+    <input type="radio" name="photos" id="p5">
+    <label for="p5">
+      <img src="images/image5.jpg" width="90">
+    </label>
+    <img src="images/image5.jpg"><br>
+    <h1>
+      头号玩家
+    </h1>
+  </div>
 </body>
 </html>
